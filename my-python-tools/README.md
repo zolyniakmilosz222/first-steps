@@ -11,16 +11,13 @@ This is my first Python project with simple utilities.
 ## Progress Log
 
 ### Day 1
-- Started project and created a basic game about catching a fish
-- Added screenshot below.
-
-![Fish screenshot](screenshots/calculator.png)
-
-## How to Run
-```bash
-python your_code.py
-```
+- Installed VS code, educated myself on basic programming logistics, basic first steps
+- Started and finished project and created a basic game about catching a fish
 
 ## Next Steps
 - Create more advanced tools in python
 - create Tamagotchi-like game
+- install Linux distro with de on another personal device for practice purposes and potentialy running it as a personal server in the future
+
+### Day 2
+- Sta
