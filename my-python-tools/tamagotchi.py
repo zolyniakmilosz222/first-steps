@@ -1,14 +1,14 @@
 import tkinter as  tk
-from tkinter import colorchooser
+#from tkinter import colorchooser
 gra = False
 x = 100
 y = 100
 z = 100
-i = 99
+'''i = 99
 j= 99
 k= 99
-szerokość_okna_startowego = 500
-wysokość_okna_startowego = 500
+title_screen_width = 500
+title_screen_height = 500
 #def animacja_okna_głównego():
 
 def animacja():
@@ -17,7 +17,7 @@ def animacja():
         i -= 1 
         j -= 1
         k -= 1
-        okno_startowe.after(299, animacja)
+        title_screen.after(299, animacja)'''
 
 def poziom_zadowolenia_stworka():
     global x, y, z
@@ -25,12 +25,12 @@ def poziom_zadowolenia_stworka():
         x -= 1 
         y -= 1
         z -= 1
-        okno_startowe.after(10, poziom_zadowolenia_stworka)
+        title_screen.after(10, poziom_zadowolenia_stworka)
 
 def start_gry():
     global gra, nowe_okno
     gra = True
-    nowe_okno = tk.Toplevel(okno_startowe)
+    nowe_okno = tk.Toplevel(title_screen)
     nowe_okno.title("Nowe okno")
     nowe_okno.geometry("600x600")
     napis = tk.Label(nowe_okno, text="GRA",)
@@ -88,27 +88,27 @@ def check():
     if gra:
         print (x, y, z)
         nowe_okno.after(200, check)
-def cos():
+'''def cos():
     global i, j, k
     if x == 100:
         print (i, j, k)
-        okno_startowe.after(200, cos)
+        title_screen.after(200, cos)'''
 
-okno_startowe = tk.Tk()
+title_screen = tk.Tk()
 
-img = tk.PhotoImage(width=szerokość_okna_startowego, height=wysokość_okna_startowego)
-canvas = tk.Canvas(okno_startowe, width=szerokość_okna_startowego, height=wysokość_okna_startowego)
+'''img = tk.PhotoImage(width=title_screen_width, height=title_screen_height)
+canvas = tk.Canvas(title_screen, width=title_screen_width, height=title_screen_height)
 canvas.pack()
 canvas.create_image((0, 0), image=img, anchor= "nw")
-okno_startowe.geometry(f'{szerokość_okna_startowego}x{wysokość_okna_startowego}')
+title_screen.geometry(f'{title_screen_width}x{title_screen_height}')
 img.put("red", (10, 10))
-img.put(f'#EE{j}{k}', to=(10, 0, szerokość_okna_startowego,wysokość_okna_startowego))
-#img.put("#FF0000", to=(10, 0, szerokość_okna_startowego,wysokość_okna_startowego))
-#img.put("#EE9999", to=(10, 0, szerokość_okna_startowego,wysokość_okna_startowego))
+img.put(f'#EE{j}{k}', to=(10, 0, title_screen_width,title_screen_height))
+#img.put("#FF0000", to=(10, 0, title_screen_width,title_screen_height))
+#img.put("#EE9999", to=(10, 0, title_screen_width,title_screen_height))'''
 
 
 przycisk = tk.Button(
-    okno_startowe,
+    title_screen,
     fg="green",
     bg="gray",
     text="Graj!",
@@ -122,7 +122,7 @@ przycisk.place(
     anchor="center"
 )
 tytuł = tk.Label(
-    okno_startowe,
+    title_screen,
     fg="black",
     text="MAGICZNY STWOREK",
     font=("Verdana", 12, "bold")
@@ -133,6 +133,5 @@ tytuł.place(
     rely=0.1,
     anchor="center"
 )
-cos()
-animacja()
-okno_startowe.mainloop()
+
+title_screen.mainloop()
