@@ -51,3 +51,13 @@ This is my first Python project with simple utilities.
 - update my README and git repo's with screenshots
 - work on making a inside-code adnotations and code managment - learn How to make everything more more clear and type in english
 - HAVE FUN WHILE DOING IT
+
+### Day 5
+- survived 1st sem of CS
+- learned python basics
+- started learning C basic
+## Next steps
+- learn more C, Java and Python
+- learn computer architecture.
+- learn what Git actually is. How branching, pushing and merging works
+- HAVE FUN WHILE DOING ALL OF THIS
